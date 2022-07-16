@@ -1,0 +1,14 @@
+<h1>My Angular App</h1>
+
+<app-foo [label]="'from app base'"></app-foo>
+
+<nav>
+  <ul>
+    <!-- ada di route child dashboard module -->
+    <li><a [routerLink]="['dashboardx']">Dashboard</a></li>
+    <!-- ada di route child users module -->
+    <li><a [routerLink]="['usersx']">Users</a></li>
+  </ul>
+</nav>
+
+<router-outlet></router-outlet>
